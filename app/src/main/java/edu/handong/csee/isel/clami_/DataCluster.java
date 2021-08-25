@@ -27,8 +27,9 @@ public class DataCluster {
 		}
 
 		instances.setClassIndex(instances.numAttributes()-1);
-		System.out.println("DataCluster");
-		System.out.println("loadArff method");
+		System.out.println("*DataCluster class*");
+		System.out.println("");
+		System.out.println("-loadArff method");
 		System.out.println("instances와 metrices 데이터 수집");
 		System.out.println("");
 		

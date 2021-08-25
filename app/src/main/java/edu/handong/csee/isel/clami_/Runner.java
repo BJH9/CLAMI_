@@ -41,8 +41,10 @@ public class Runner {
 		InstanceSelector instanceSelector = new InstanceSelector();
 		DatasetTester datasetTester = new DatasetTester();
 		
+		instances = null;
+		
 		//DataCluster class
-		 //복잡도를 2차원배열로 생성한다.
+		 //instaces와 metric
 		dataCluster.loadArff(instancesFile);
 		
 		//Labeler class
@@ -58,7 +60,7 @@ public class Runner {
 		metricSelector.selectMetric(metricSelector.calculateMVS(instances));
 		
 		//InstanceSelector class
-		instanceSelector.calcualteViolations(instances);
+		//instanceSelector.calcualteViolations(instances);
 		 //violation을 구한 뒤, instance selection을 한다.
 		instanceSelector.selectInstance(instanceSelector.calcualteViolations(instances));
 		//DatasetTester class

@@ -7,7 +7,9 @@ private int median;
 	private void calculateMedians(Instances instances) {
 		int value;
 		value = 0;
-		System.out.println("calculateMedian method in findHigherMetricThanMedian");
+		System.out.println("*Labeler class*");
+		System.out.println("");
+		System.out.println("-calculateMedian method in findHigherMetricThanMedian");
 		System.out.println("각각의 metric의 median을 구한다.");
 		System.out.println("");
 		median = value;
@@ -19,7 +21,7 @@ private int median;
 	
 	private void findHigherMetricThanMedian(Instances instances) {
 		calculateMedians(instances);
-		System.out.println("findHigherMetricThanMedian method in groupInstances");
+		System.out.println("-findHigherMetricThanMedian method in groupInstances");
 		System.out.println("metric내에서 median보다 높은 값들을 찾아 표시한다.");
 		System.out.println("");
 		
@@ -27,14 +29,14 @@ private int median;
 	
 	public void groupInstances(Instances instances) {
 		findHigherMetricThanMedian(null);
-		System.out.println("groupInstances method");
-		System.out.println("instance에 있는 표시된 값들 (metric에서 중간값보다 높아 표시된)의 개수(=k)에 따라 그룹을 나눈다.");
+		System.out.println("-groupInstances method");
+		System.out.println("instance에 있는 표시된 값들 (metric에서 중간값보다 높아 표시된)의 개수(=k)가 동일한 것들끼리 묶어 그룹을 만든다.");
 		System.out.println("");
 		
 	}
 	
 	public Instances labelInstance(Instances instances) {
-		System.out.println("labelInstance method");
+		System.out.println("-labelInstance method");
 		System.out.println("다시 k에 따라 두 개의 그룹으로 나눈다. 상위의 그룹은 B로 label, 하위의 그룹은 C로 label한다.");
 		System.out.println("");
 		return null;
